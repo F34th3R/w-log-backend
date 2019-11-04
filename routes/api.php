@@ -20,11 +20,4 @@ Route::group(['middleware'  =>  ['auth:api']], function () {
         Route::put('/{post}', 'PostController@update');
         Route::delete('/{post}', 'PostController@destroy');
     });
-//    Route::group(['prefix'  =>  '/roles'], function () {
-//        Route::get('/','RoleController@index');
-//        Route::get('/{id}', 'RoleController@show');
-//        Route::post('/', 'RoleController@store');
-//        Route::put('/{id}', 'RoleController@update');
-//        Route::delete('/{id}', 'RoleController@destroy');
-//    });
 });
